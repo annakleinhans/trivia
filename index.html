@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel=stylesheet href="trivia.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+<h1>As easy as one, two, three.</h1>
+
+<h4>Create your own trivia quiz using the simple criteria below.</h4>
+
+<div id="creation">
+
+    <select id="category" class="dropdowns">
+        <option value="9">General Knowledge</option>
+        <option value="10">Books</option>
+        <option value="11">Movies</option>
+        <option value="12">Music</option>
+        <option value="14">TV Shows</option>
+        <option value="22">Geography</option>
+        <option value="24">Politics</option>
+    </select>
+
+    <select id="amounts" class="dropdowns">
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+    </select>
+
+    <select id="difficulty" class="dropdowns">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+
+    <select id="type" class="dropdowns">
+        <option value="multiple">Multiple Choice</option>
+        <option value="boolean">True / False</option>
+    </select>
+
+
+<button class="btn btn-info" id="create">Create Trivia</button>
+
+</div>
+</body>
+</html>

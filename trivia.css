@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+button {
+    font-family: "Verdana";
+    color: white;
+}
+
+select {
+    font-family: "Verdana";
+}
+
+.dropdowns {
+    font-family: "Verdana";
+    height: 40px;
+    color: #4ec1dc;
+    position: relative;
+}
+

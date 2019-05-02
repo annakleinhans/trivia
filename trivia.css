@@ -1,18 +1,14 @@
-body {
-    background-color: black;
-}
-
 h1 {
-    color: white;
+    color: black;
 }
 
 h4 {
-    color: white;
+    color: black;
 }
 
 button {
     font-family: "Verdana";
-    color: white;
+    color: black;
 }
 
 select {
@@ -26,3 +22,13 @@ select {
     position: relative;
 }
 
+body {
+    position: relative;
+    left: 40px;
+
+}
+
+h5 {
+    color: black;
+    font-family:"Verdana";
+}

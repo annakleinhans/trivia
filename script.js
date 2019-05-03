@@ -51,8 +51,8 @@ function shuffle(array) {
 }
 
 function makeQuiz(data){
-
-    var html;
+    var quizzie = document.getElementById("quizzie");
+    var html = "";
     for (var i = 0; i < data.results.length; i++){
 
         var answerArray = questions(data.results[i]);
@@ -60,13 +60,12 @@ function makeQuiz(data){
         html += data.results[i].question;
 
         for(var j = 0; j<answerArray.length;j++){
-            html += "<input type='radio' name='question" + j + " ' value= ' " + answerArray[j] + " '>";
+            html += "<input type='radio' name='question " + j + " ' value= ' " + answerArray[j] + " '>";
             html += answerArray[j];
         }
 
     }
-
-    html = quizzie.innerHTML;
+quizzie.innerHTML = html;
 
 }
 

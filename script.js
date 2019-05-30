@@ -53,6 +53,7 @@ function shuffle(array) {
 }
 
 function makeQuiz(data){
+    $
     var quizzie = document.getElementById("quizzie");
     var html = "";
     for (var i = 0; i < data.results.length; i++){
@@ -98,14 +99,11 @@ function handleSubmit() {
         }
     }
 
-       console.log(correct);
+    console.log(correct);
     $("#submit").hide();
     displayGrade(correct);
 }
 
-// function restart(){
-//
-// }
 
 function displayGrade(int){
     var numsQs = $("#amounts").val();

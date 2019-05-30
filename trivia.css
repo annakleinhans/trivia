@@ -1,9 +1,9 @@
 h1 {
-    color: black;
+    color: white;
 }
 
 h4 {
-    color: black;
+    color: white;
 }
 
 button {
@@ -25,10 +25,15 @@ select {
 body {
     position: relative;
     left: 40px;
-
+    background-color: black;
 }
 
 h5 {
-    color: black;
+    color: white;
     font-family:"Verdana";
+}
+
+input radio {
+    font-family: "Verdana";
+    color: black;
 }

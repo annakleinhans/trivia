@@ -1,13 +1,13 @@
 var correctAnswerArray = [];
 
 function running(data){
-    console.log(data);
     makeQuiz(data);
 
 }
 
 $(document).ready(function(){
     $("#submit").hide();
+   // $("#results").hide();
     $("#create").on("click",function(){
         $.ajax({
             url: "https://opentdb.com/api.php?amount=" + $("#amounts").val() + "&category=" + $("#category").val() + "&difficulty=" + $("#difficulty").val() + "&type=multiple",
@@ -88,7 +88,10 @@ function handleSubmit() {
         console.log(items);
         for (var i = 0; i < items.length; i++) {
             if (items[i].checked) {
-                if (items[i].value == correctAnswerArray[j].value) {
+                var x = items[i].value;
+                var z = correctAnswerArray[j];
+                console.log(x == z);
+                if (items[i].value == correctAnswerArray[j]) {
                     correct = correct + 1;
                 }
             }
@@ -97,6 +100,20 @@ function handleSubmit() {
 
        console.log(correct);
     $("#submit").hide();
-
+    displayGrade(correct);
 }
 
+// function restart(){
+//
+// }
+
+function displayGrade(int){
+    var numsQs = $("#amounts").val();
+    var percent = (int / numsQs) * 100;
+    var score = percent + "%";
+    console.log(score);
+    var html2 = "";
+    html2 += "<h3>You scored " + score + "</h3>";
+    results.innerHTML = html2;
+
+}

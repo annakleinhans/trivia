@@ -7,7 +7,6 @@ function running(data){
 
 $(document).ready(function(){
     $("#submit").hide();
-   // $("#results").hide();
     $("#create").on("click",function(){
         $.ajax({
             url: "https://opentdb.com/api.php?amount=" + $("#amounts").val() + "&category=" + $("#category").val() + "&difficulty=" + $("#difficulty").val() + "&type=multiple",
@@ -110,8 +109,6 @@ function displayGrade(int){
     var percent = (int / numsQs) * 100;
     var score = percent + "%";
     console.log(score);
-    var html2 = "";
-    html2 += "<h3>You scored " + score + "</h3>";
-    results.innerHTML = html2;
+    alert("You scored " + score + ".");
 
 }
